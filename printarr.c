@@ -4,6 +4,7 @@
 #define SIZE 4
 
 void printarray(int*);
+void printarray_size(int*, int);
 
 int main(void){
 	int x[SIZE] = {243,157,234,6943};
@@ -19,12 +20,20 @@ int main(void){
 		y[i] = rand();
 	}
 
-	printarray(y);
+	printarray_size(y, size);
 }
 
 void printarray(int* x){
 
 	for(int i = 0; i < SIZE; i++){
 		printf("%d ", x[i]);
+	}
+}
+
+//internally, user-at-computer, file, database
+
+void printarray_size(int* x, int size){
+	for(int i = 0; i < size; i++){
+		printf("%d", x[i]);
 	}
 }
