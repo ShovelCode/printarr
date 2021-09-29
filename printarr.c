@@ -34,6 +34,6 @@ void printarray(int* x){
 
 void printarray_size(int* x, int size){
 	for(int i = 0; i < size; i++){
-		printf("%d", x[i]);
+		printf("%d ", x[i]);
 	}
 }
